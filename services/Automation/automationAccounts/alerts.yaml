@@ -16,7 +16,7 @@
     threshold: 0
     criterionType: StaticThresholdCriterion
     dimensions:
-    - Status:
+    - name: Status
       operator: Exclude
       values:
       - Completed
@@ -33,38 +33,16 @@
     properties:
       scope: Resource
       multiResource: false
-- name: TotalJob
-  description: The total number of jobs
-  type: Metric
-  verified: false
-  visible: false
-  tags:
-  - auto-generated
-  - agc-6781
-  properties:
-    metricName: TotalJob
-    metricNamespace: Microsoft.Automation/automationAccounts
-    severity: 3
-    windowSize: PT5M
-    evaluationFrequency: PT1M
-    timeAggregation: Total
-    operator: GreaterThan
-    criterionType: StaticThresholdCriterion
-    dimensions:
-    - name: status
-      operator: include
-      values:
-      - failed
-    threshold: 0.0
-    autoMitigate: false
+  guid: 74e0e3b4-62aa-4503-b05d-c5c79a029ed6
 - name: TotalUpdateDeploymentMachineRuns
-  description: Total software update deployment machine runs in a software update deployment run
+  description: Total software update deployment machine runs in a software update
+    deployment run
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-1624
+  - agc-1665
   properties:
     metricName: TotalUpdateDeploymentMachineRuns
     metricNamespace: Microsoft.Automation/automationAccounts
@@ -75,20 +53,20 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     dimensions:
-    - name: status
-      operator: include
+    - operator: include
+      name: status
       values:
       - failed
     threshold: 0.0
-    autoMitigate: false
+  guid: 49e7f58f-4910-4d2f-8589-573e8a65c6dd
 - name: TotalUpdateDeploymentRuns
   description: Total software update deployment runs
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-1216
+  - agc-1222
   properties:
     metricName: TotalUpdateDeploymentRuns
     metricNamespace: Microsoft.Automation/automationAccounts
@@ -99,9 +77,9 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     dimensions:
-    - name: status
-      operator: include
+    - operator: include
+      name: status
       values:
       - failed
     threshold: 0.0
-    autoMitigate: false
+  guid: c521bf0d-efec-4d3a-8541-d8749915bfd4

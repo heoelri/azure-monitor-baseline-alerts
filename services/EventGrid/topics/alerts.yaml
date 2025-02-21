@@ -1,68 +1,30 @@
-- name: PublishSuccessLatencyInMs
-  description: Publish success latency in milliseconds
-  type: Metric
-  verified: false
-  visible: false
-  tags:
-  - auto-generated
-  - agc-2531
-  properties:
-    metricName: PublishSuccessLatencyInMs
-    metricNamespace: Microsoft.EventGrid/topics
-    severity: 3
-    windowSize: PT5M
-    evaluationFrequency: PT1M
-    timeAggregation: Average
-    operator: GreaterThan
-    criterionType: StaticThresholdCriterion
-    threshold: 3000.0
-    autoMitigate: false
 - name: DeadLetteredCount
   description: Total dead lettered events matching to this event subscription
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-2048
+  - agc-1941
   properties:
     metricName: DeadLetteredCount
     metricNamespace: Microsoft.EventGrid/topics
-    severity: 2
-    windowSize: PT5M
-    evaluationFrequency: PT1M
-    timeAggregation: Total
-    operator: GreaterThanOrEqual
-    criterionType: StaticThresholdCriterion
-    threshold: 1.0
-    autoMitigate: false
-- name: PublishSuccessCount
-  description: Total events published to this topic
-  type: Metric
-  verified: false
-  visible: false
-  tags:
-  - auto-generated
-  - agc-1730
-  properties:
-    metricName: PublishSuccessCount
-    metricNamespace: Microsoft.EventGrid/topics
     severity: 3
     windowSize: PT5M
-    evaluationFrequency: PT1M
+    evaluationFrequency: PT5M
     timeAggregation: Total
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
-    threshold: 2500.0
-    autoMitigate: false
+    threshold: 0.0
+  guid: 343258f9-4bb2-41fb-abfa-d04ea62a6aad
 - name: DeliveryAttemptFailCount
   description: Total events failed to deliver to this event subscription
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-1332
+  - agc-1538
   properties:
     metricName: DeliveryAttemptFailCount
     metricNamespace: Microsoft.EventGrid/topics
@@ -73,15 +35,15 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 1.0
-    autoMitigate: false
+  guid: 95865d3b-41d0-4ad6-b08b-a2dcfe0940a9
 - name: PublishFailCount
   description: Total events failed to publish to this topic
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-983
+  - agc-1149
   properties:
     metricName: PublishFailCount
     metricNamespace: Microsoft.EventGrid/topics
@@ -92,15 +54,15 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 5.0
-    autoMitigate: false
+  guid: 230c0173-8b36-4412-9617-3e096886a403
 - name: DroppedEventCount
   description: Total dropped events matching to this event subscription
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-802
+  - agc-941
   properties:
     metricName: DroppedEventCount
     metricNamespace: Microsoft.EventGrid/topics
@@ -111,4 +73,4 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 1.0
-    autoMitigate: false
+  guid: e9561f89-282e-4145-b5cc-8485a7fc987c

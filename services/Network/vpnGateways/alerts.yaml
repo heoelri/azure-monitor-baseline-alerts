@@ -10,6 +10,11 @@
     operationName: Microsoft.Network/vpnGateways/delete
     status:
     - succeeded
+  references:
+  - name: Activity Log Service Notifications
+    url: https://learn.microsoft.com/azure/service-health/alerts-activity-log-service-notifications-portal
+  - name: Best practices for setting up service health alerts
+    url: https://www.microsoft.com/videoplayer/embed/RE2OtUa
   deployments:
   - name: Deploy Activity Log VPN Gateway Delete Alert
     template: Deploy-ActivityLog-VPNG-Del.json
@@ -21,7 +26,8 @@
       policyScope: managementGroup
       documented: false
       alertName: ActivityVPNGatewayDelete
-- name: Tunnel Average Bandwidth
+  guid: 50c8313a-bbe7-4981-8eee-4b4d44fda37f
+- name: TunnelAverageBandwidth
   description: Metric Alert for VPN Gateway Bandwidth Utilization
   type: Metric
   verified: false
@@ -29,7 +35,7 @@
   tags:
   - alz
   properties:
-    metricName: tunnelaveragebandwidth
+    metricName: TunnelAverageBandwidth
     metricNamespace: Microsoft.Network/vpnGateways
     severity: 0
     windowSize: PT5M
@@ -53,6 +59,7 @@
     properties:
       scope: Resource
       multiResource: false
+  guid: d74fd111-125f-45b8-8bbc-e23bd40aa869
 - name: BGP Peer Status
   description: Metric Alert for VPN Gateway BGP peer status
   type: Metric
@@ -61,7 +68,7 @@
   tags:
   - alz
   properties:
-    metricName: bgppeerstatus
+    metricName: BgpPeerStatus
     metricNamespace: Microsoft.Network/vpnGateways
     severity: 0
     windowSize: PT5M
@@ -83,7 +90,8 @@
     properties:
       scope: Resource
       multiResource: false
-- name: Tunnel Egress Bytes
+  guid: b0ea832c-aae8-42c0-ad83-0bb13d66d56e
+- name: TunnelEgressBytes
   description: Metric Alert for VPN Gateway tunnel egress bytes
   type: Metric
   verified: false
@@ -91,7 +99,7 @@
   tags:
   - alz
   properties:
-    metricName: tunnelegressbytes
+    metricName: TunnelEgressBytes
     metricNamespace: Microsoft.Network/vpnGateways
     severity: 0
     windowSize: PT5M
@@ -113,7 +121,8 @@
     properties:
       scope: Resource
       multiResource: false
-- name: Tunnel Egress Packet Drop Count
+  guid: cd3b834d-f34f-4a67-af01-b1c5d32195a9
+- name: TunnelEgressPacketDropCount
   description: Metric Alert for VPN Gateway tunnel TunnelEgressPacketDropCount
   type: Metric
   verified: false
@@ -146,7 +155,8 @@
     properties:
       scope: Resource
       multiResource: false
-- name: Tunnel Egress Packet Drop TS Mismatch
+  guid: c5ae6d80-59db-4087-8e9b-0df36c54ebe9
+- name: TunnelEgressPacketDropTSMismatch
   description: Metric Alert for VPN Gateway tunnel TunnelEgressPacketDropTSMismatch
   type: Metric
   verified: false
@@ -179,15 +189,16 @@
     properties:
       scope: Resource
       multiResource: false
-- name: Tunnel Ingress Bytes
-  description: Metric Alert for VPN Gateway tunnel ingress bytes
+  guid: 7b361791-127e-4a6f-9c1b-c8d9f41ec223
+- name: TunnelIngressBytes
+  description: Metric Alert for VPN Gateway TunnelIngressBytes
   type: Metric
   verified: false
   visible: true
   tags:
   - alz
   properties:
-    metricName: tunnelingressbytes
+    metricName: TunnelIngressBytes
     metricNamespace: Microsoft.Network/vpnGateways
     severity: 0
     windowSize: PT5M
@@ -209,8 +220,9 @@
     properties:
       scope: Resource
       multiResource: false
-- name: Tunnel Ingress Packet Drop Count
-  description: Metric Alert for VPN Gateway tunnel TunnelEgressPacketDropCount
+  guid: a05d97b8-37b9-4100-a860-d57363aaaf5f
+- name: TunnelIngressPacketDropCount
+  description: Metric Alert for VPN Gateway tunnel TunnelIngressPacketDropCount
   type: Metric
   verified: false
   visible: true
@@ -242,7 +254,8 @@
     properties:
       scope: Resource
       multiResource: false
-- name: Tunnel Ingress Packet Drop TS Mismatch
+  guid: c2c9a09d-7fad-4c67-9a29-4c2c376a7214
+- name: TunnelIngressPacketDropTSMismatch
   description: Metric Alert for Vnet Gateway tunnel TunnelIngressPacketDropTSMismatch
   type: Metric
   verified: false
@@ -275,3 +288,4 @@
     properties:
       scope: Resource
       multiResource: false
+  guid: 7affb4da-2058-4f12-b15b-ca58e92b63e5

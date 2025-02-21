@@ -2,10 +2,10 @@
   description: CPU percent
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-737
+  - agc-746
   properties:
     metricName: cpu_percent
     metricNamespace: Microsoft.DBforMariaDB/servers
@@ -16,15 +16,15 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 80.0
-    autoMitigate: false
+  guid: 0f19979d-9dc2-4636-8e15-435bbfa1f0f9
 - name: storage_percent
   description: Storage percent
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-442
+  - agc-420
   properties:
     metricName: storage_percent
     metricNamespace: Microsoft.DBforMariaDB/servers
@@ -35,15 +35,15 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 80.0
-    autoMitigate: false
+  guid: ef38051a-d9e3-4705-b208-29a421e729be
 - name: memory_percent
   description: Memory percent
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-423
+  - agc-368
   properties:
     metricName: memory_percent
     metricNamespace: Microsoft.DBforMariaDB/servers
@@ -54,15 +54,15 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 90.0
-    autoMitigate: false
+  guid: faf01668-c98a-4755-ae74-9dd4151f4c39
 - name: io_consumption_percent
   description: IO percent
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-341
+  - agc-356
   properties:
     metricName: io_consumption_percent
     metricNamespace: Microsoft.DBforMariaDB/servers
@@ -73,4 +73,4 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 80.0
-    autoMitigate: false
+  guid: 13bbfe6e-3b65-4940-9344-6d1cc78e7d54

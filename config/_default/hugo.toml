@@ -50,6 +50,10 @@ enableRobotsTXT = true
     source = 'services'
     target = 'static'
     includeFiles = ['amba-alerts.*']
+  [[module.mounts]]
+    source = 'artifacts'
+    target = 'content/artifacts'
+    includeFiles = ['**/*.json', '**/*.bicep']
 
 [markup]
   [markup.goldmark.renderer]
@@ -65,6 +69,8 @@ enableRobotsTXT = true
 [params]
 
   ambaDevMode = false
+
+  ambaTelemetryPid = "pid-8bb7cf8a-bcf7-4264-abcb-703ace2fc84d"
 
   # (Optional, default 6) Set how many table of contents levels to be showed on page.
   # Use false to hide ToC, note that 0 will default to 6 (https://gohugo.io/functions/default/)
@@ -115,7 +121,7 @@ enableRobotsTXT = true
 
   # (Optional, default none) Add a link to your Privacy Policy page to the site footer.
   # It can be either a remote url or a local file path relative to your content directory.
-  # geekdocPrivacyPolicy = "/privacy"
+  geekdocPrivacyPolicy = "privacy"
 
   # (Optional, default true) Add an anchor link to headlines.
   geekdocAnchor = true
