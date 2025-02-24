@@ -3,10 +3,10 @@
     resources.
   type: Metric
   verified: false
-  visible: false
+  visible: true
   tags:
   - auto-generated
-  - agc-414
+  - agc-485
   properties:
     metricName: cpu_metric
     metricNamespace: Microsoft.PowerBIDedicated/capacities
@@ -17,4 +17,4 @@
     operator: GreaterThan
     criterionType: StaticThresholdCriterion
     threshold: 90.0
-    autoMitigate: false
+  guid: 2993107e-d54f-4fc4-af7a-6a9bc6b4ea46
