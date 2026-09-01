@@ -13,8 +13,8 @@ weight: 40
 > [Management Initiative](#management-initiative) </br>
 > [Identity Initiative](#identity-initiative) </br>
 > [Azure VM Initiative](#azure-vm-initiative) </br>
-> [Azure VM Scale Sets](#azure-vmss-initiative) </br>
-> [Arc-enabled server VM Initiative](#arc-enabled server-initiative) </br>
+> [Azure VM Scale Sets Initiative](#azure-vmss-initiative) </br>
+> [Arc-enabled server VM Initiative](#arc-enabled-server-initiative) </br>
 > [Key Management Initiative](#key-management-initiative) </br>
 > [Load Balancing Initiative](#load-balancing-initiative) </br>
 > [Network Changes Initiative](#network-changes-initiative) </br>
