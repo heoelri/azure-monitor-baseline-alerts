@@ -51,7 +51,9 @@ The following tables provide a mapping between alert names and the corresponding
 > [!important]
 > The sample values in the tables ***are not meant*** to serve as recommendations for the override value!
 
-</br>
+> [Activity Log alerts override tags table](#activity-log-alerts-override-tags-table) </br>
+> [Log-search alerts override tags table](#log-search-alerts-override-tags-table) </br>
+> [Metric alerts override tags table](#metric-alerts-override-tags-table) </br>
 
 ### Activity Log alerts override tags table
 
